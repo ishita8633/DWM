@@ -6,7 +6,7 @@ import scipy.cluster.hierarchy as sch
 # Manually create a dataset with values
 X = np.array([[0.40, 0.53], [0.22, 0.38], [0.35, 0.32], [0.26, 0.19], [0.08, 0.41], [0.45, 0.30]])
 
-# Create the Aglomerative Clustering model with complete linkage
+# Create the Aglomerative Clustering model with single linkage
 model = AgglomerativeClustering(n_clusters=5, affinity='euclidean', linkage='single')
 
 # Fit the model to the data
